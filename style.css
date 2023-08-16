@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+form {
+    text-align: center;
+    line-height: 2.5em;
+}
+label {
+    font-size: 1em;
+    font-weight: bold;
+}
+input {
+    height: 1.5em;
+    font-size: 1em;
+}
+#register {
+    background-color: lightyellow;
+    margin: 2em;
+    border: 3px solid;
+    border-color: darkblue;
+    padding: 15px;
+    font-size: 1.5em;
+}
+p {
+    text-indent: 2em;
+    margin: 2%;
+}
+h3 {
+    text-indent: 2em;
+}
+.homeimg {
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: lightblue;
+}
