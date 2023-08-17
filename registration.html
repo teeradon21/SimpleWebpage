@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ลงทะเบียนเช่าพื้นที่แสดงสินค้า</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="register.js"></script>
   </head>
   <body>
     <h1>ลงทะเบียนเช่าพื้นที่จัดแสดง</h1>
@@ -20,7 +21,13 @@
       />
       <br />
       <label for="bootsize">ขนาดบูธ</label>
-      <select id="bootsize" name="bootsize">
+      <select
+        id="bootsize"
+        name="bootsize"
+        required
+        oninvalid="this.setCustomValidity('โปรดเลือกขนาดบูธ')"
+      >
+        <option selected="true" disabled></option>
         <option value="10x10">10x10 ฟุต</option>
         <option value="10x15">10x15 ฟุต</option>
       </select>
@@ -55,7 +62,13 @@
         size="20"
       />
       <br />
-      <input type="submit" id="submit" name="submit" value="Submit" />
+      <input
+        type="submit"
+        id="submit"
+        name="submit"
+        value="Submit"
+        onclick="checkform()"
+      />
     </form>
   </body>
 </html>
